@@ -6,7 +6,6 @@ data2_4 <- transform(subSetData2, Date = as.Date(Date, format="%d/%m/%Y"), Time 
 png("plot4.png", width=480, height=480)
 
 par(mfrow = c(2, 2))
-
 ### Plotagem
 with(data2_4, {
 plot(datetime, Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
